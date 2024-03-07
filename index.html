@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociofy</title>
+  <link rel="shortcut icon" href="images/pngegg.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'main-color': '#797DFC',
+            'black-color': '#12132D',
+            'dark-color': '#12132D99',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/e819ca8460.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <style>
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+
+    .font-mulish {
+      font-family: "Mulish", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="font-mulish w-[90%] lg:w-11/12 max-w-7xl mx-auto">
+    <nav class="my-3 lg:my-6">
+      <div class="navbar bg-white justify-between">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="p-2 mr-1 mt-[2px] -ml-2 hover:bg-slate-100 rounded-full lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 -ml-2 space-y-1 z-[1] p-3 shadow-lg bg-white rounded-box w-44">
+              <li><a class="text-base">Home</a></li>
+              <li><a class="text-base">Make a post</a></li>
+              <li><a class="text-base">Add Friends</a></li>
+              <li><a class="text-base">Bookmarks</a></li>
+            </ul>
+          </div>
+          <h1 class="text-2xl lg:text-4xl font-black cursor-default text-black-color">Sociofy</h1>
+        </div>
+        <div class="navbar-end hidden lg:flex space-x-5">
+          <ul class="flex gap-3 text-base items-center font-medium text-dark-color">
+            <div
+              class="h-[57px] w-[57px] cursor-pointer tooltip border border-[rgba(3, 7, 18, 0.1)] rounded-full flex justify-center items-center"
+              data-tip="Home">
+              <img src="images/home.svg">
+            </div>
+            <div
+              class="h-[57px] w-[57px] cursor-pointer tooltip border border-[rgba(3, 7, 18, 0.1)] rounded-full flex justify-center items-center"
+              data-tip="Make a post">
+              <img src="images/pen.svg">
+            </div>
+            <div
+              class="h-[57px] w-[57px] cursor-pointer tooltip border border-[rgba(3, 7, 18, 0.1)] rounded-full flex justify-center items-center"
+              data-tip="Add Friends">
+              <img src="images/Vector.svg">
+            </div>
+            <div
+              class="h-[57px] w-[57px] cursor-pointer tooltip border border-[rgba(3, 7, 18, 0.1)] rounded-full flex justify-center items-center"
+              data-tip="Bookmarks">
+              <img src="images/flag.svg">
+            </div>
+
+          </ul>
+        </div>
+        <div class="min-w-max ml-5">
+          <button
+            class="px-5 md:px-9 py-2 md:py-[14px] bg-main-color border-2 border-main-color text-base md:text-xl rounded-full font-bold text-white hover:text-main-color hover:bg-white duration-300">Sign
+            In</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero lg:h-[550px] rounded-[32px] bg-[#12132D] bg-no-repeat bg-cover"
+      style='background-image: url(images/bgbanner.png)'>
+      <div class="hero-content flex-col lg:flex-row-reverse justify-center lg:justify-between gap-8 lg:gap-36 p-8">
+        <div
+          class="flex justify-between text-[#12132DCC] gap-9 bg-white p-7 lg:p-10 text-lg lg:text-[22px] font-semibold rounded-[32px] w-full lg:max-w-fit">
+          <div class="flex flex-col gap-5">
+            <p>Registered Users</p>
+            <p>Forum</p>
+            <p>Topics</p>
+            <p>Replies</p>
+          </div>
+          <div class="flex flex-col gap-5">
+            <p>01</p>
+            <p>05</p>
+            <p>01</p>
+            <p>01</p>
+          </div>
+        </div>
+        <div>
+          <h1 class="mb-5 text-4xl lg:text-6xl font-black w-full mx-auto leading-tight text-white">Welcome to the
+            <br><span
+              class="bg-gradient-to-r from-[#797DFCff] to-[#797DFC4d] bg-clip-text text-transparent">Sociofy</span>
+            Forum
+          </h1>
+          <p class="mb-5 max-w-[450px] font-inter text-lg lg:text-xl text-[#ffffffcc]">Share your favorite opinion and
+            win and wp
+            forum coffee
+            mug!
+          </p>
+          <div class="min-h-max min-w-min bg-white rounded-full p-2 lg:p-3 flex justify-around">
+            <input id="search-field" type="text" placeholder="Search categories"
+              class="w-[80%] rounded-full outline-none px-3 lg:px-4 font-medium placeholder:font-medium text-base lg:text-lg">
+            <button onclick="searchHandle()"
+              class="btn btn-primary px-4 md:px-7 bg-main-color border-2 border-main-color text-base md:text-xl rounded-full font-bold text-white">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="font-mulish w-[90%] lg:w-11/12 max-w-7xl mx-auto">
+    <!-- Lets Discuss Section -->
+    <section>
+      <div class="text-center space-y-4 my-9 lg:mt-20">
+        <h2 class="text-[22px] lg:text-[40px] font-black text-black-color">Let’s Discuss</h2>
+        <p class="text-sm lg:text-lg font-medium text-[#13131899] w-9/12 lg:w-[700px] mx-auto">Yes, you can run unit
+          tests and view the results directly within the app. The integrated testing features allow for a streamlined.
+        </p>
+      </div>
+    </section>
+
+    <!-- Posts Section -->
+    <div id="loading-bar" class="text-center mb-[40px] hidden">
+      <span class="loading loading-bars loading-lg"></span>
+    </div>
+    <section class="font-mulish flex gap-2 lg:gap-6 flex-col lg:flex-row">
+      <!-- Left side -->
+      <div id="posts-container">
+      </div>
+
+
+      <!-- right side -->
+      <div class="bg-[#F3F3F5] p-4 lg:p-6 rounded-3xl lg:w-[35%] h-min">
+        <div id="read-container" class="space-y-4">
+          <div class="flex justify-between w-full px-2">
+            <h3 class="font-bold text-black-color text-lg lg:text-xl">Title</h3>
+            <div class="flex gap-2 items-center">
+              <img src="images/doubletick.svg">
+              <p class="min-w-max text-sm lg:text-base font-medium">Mark as read (<span id="count-number">0</span>)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join our forum Section -->
+    <div class="hero lg:h-[400px] my-10 lg:my-20 rounded-[32px] bg-[#12132D] bg-no-repeat bg-cover">
+      <div class="hero-content flex flex-col-reverse lg:flex-row gap-6 lg:gap-36">
+        <div class="p-5 lg:pl-20 lg:w-[650px] space-y-6">
+          <h1 class="mb-5 text-3xl lg:text-4xl font-black w-full mx-auto leading-tight text-white">Join Our Forum
+          </h1>
+          <p class="mb-5 w-full font-inter text-base lg:text-xl text-[#FFFFFFCC]">Share your favorite opinion and
+            win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.
+          </p>
+          <!-- <button
+            class="btn btn-primary px-4 md:px-7 bg-main-color border-2 border-main-color text-base md:text-xl rounded-full font-bold text-white">Registered
+            Now</button> -->
+          <button
+            class="px-5 md:px-9 py-2 md:py-[14px] bg-main-color text-base md:text-xl rounded-full font-bold text-white hover:text-main-color hover:bg-white duration-300">Registered
+            Now</button>
+        </div>
+        <div class="max-w-72 lg:max-w-full">
+          <img class="pt-7 lg:pt-0" src="images/joinforum.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Posts Section -->
+    <section>
+      <div class="text-center space-y-4 my-9 lg:mt-20">
+        <h2 class="text-[22px] lg:text-[40px] font-black text-black-color">Latest Posts</h2>
+        <p class="text-sm lg:text-lg font-medium text-[#13131899] w-9/12 lg:w-[700px] mx-auto">Yes, you can run unit
+          tests and view the results directly within the app. The integrated testing features allow for a streamlined.
+        </p>
+      </div>
+
+      <div id="whole-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-9">
+        <!-- <div id="card-container" class="p-5 lg:p-6 border space-y-3 rounded-3xl">
+          <div class="w-full h-[190px] bg-black rounded-3xl">
+            <img src="" alt="">
+          </div>
+          <div class="flex items-center gap-2 lg:text-lg text-dark-color font-medium">
+            <img src="images/calender.svg" alt="">
+            <p>Date</p>
+          </div>
+          <div class="space-y-2">
+            <h1 class="text-black-color font-extrabold text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Nesciunt, adipisci?</h1>
+            <p class="text-dark-color font-medium text-base lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis rerum maxime itaque quibusdam
+              voluptatum esse?</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-black">
+              <img src="">
+            </div>
+            <div>
+              <h3 class="text-black-color font-extrabold text-base lg:text-lg">Name</h3>
+              <p class="text-dark-color font-medium lg:text-base text-sm">Unknown</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+
+  <footer class="footer footer-center p-11 lg:p-[100px] bg-[#12132d0d] font-mulish ">
+    <aside class="space-y-2 lg:space-y-4">
+      <h1 class="font-black text-3xl text-black-color">Sociofy</h1>
+      <p class="text-[#12132DB3] lg:text-lg font-semibold max-w-[600px]">
+        Connect, Share, Thrive - Join the Sociofy Community Today!</p>
+      <div class="flex gap-4">
+        <a href="#"
+          class="h-[30px] w-[30px] duration-100 bg-black-color hover:scale-[1.05] rounded-full flex items-center justify-center"><i
+            class="fa-brands fa-twitter text-white"></i></a>
+        <a href="#"
+          class="h-[30px] w-[30px] duration-100 hover:scale-[1.05] bg-black-color  rounded-full flex items-center justify-center"><i
+            class="fa-brands fa-facebook-f text-white"></i></a>
+        <a href="#"
+          class="h-[30px] w-[30px] bg-black-color duration-100 hover:scale-[1.05] rounded-full flex items-center justify-center"><i
+            class="fa-brands fa-instagram mt-[1px] text-lg text-white"></i></a>
+        <a href="#"
+          class="h-[30px] w-[30px] bg-black-color  duration-100 hover:scale-[1.05] rounded-full flex items-center justify-center"><i
+            class="fa-brands fa-github mt-[1px] text-lg text-white"></i></a>
+      </div>
+    </aside>
+    <hr class="w-full">
+    <nav>
+      <div>
+        <p class="text-[#12132D80] lg:text-lg">2024, All Rights Reserved.</p>
+      </div>
+    </nav>
+  </footer>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
